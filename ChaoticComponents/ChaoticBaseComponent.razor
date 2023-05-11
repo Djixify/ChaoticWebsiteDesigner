@@ -1,0 +1,31 @@
+﻿@using Microsoft.AspNetCore.Components.Rendering;
+@inherits ComponentBase
+<div style="padding:2px;background-color:antiquewhite">
+    @ChildContent
+</div>
+
+@code {
+
+    [Parameter]
+    public RenderFragment? ChildContent { get; set; }
+
+    [Parameter]
+    public 
+
+    protected override void OnInitialized() => base.OnInitialized();
+
+    protected override Task OnInitializedAsync() => base.OnInitializedAsync();
+
+    protected override void OnParametersSet() => base.OnParametersSet();
+
+    protected override Task OnParametersSetAsync() => base.OnParametersSetAsync();
+
+    protected override bool ShouldRender() => true;
+
+    protected override void OnAfterRender(bool firstRender) => base.OnAfterRender(firstRender); 
+
+    protected override Task OnAfterRenderAsync(bool firstRender) => base.OnAfterRenderAsync(firstRender);
+
+    public override Task SetParametersAsync(ParameterView parameters) => base.SetParametersAsync(parameters);
+
+}

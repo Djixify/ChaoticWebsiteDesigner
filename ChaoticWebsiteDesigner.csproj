@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>79016e90-c486-4874-a63f-89a91f335fd0</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="ChaoticComponents\**" />
+    <Content Remove="ChaoticComponents\**" />
+    <EmbeddedResource Remove="ChaoticComponents\**" />
+    <None Remove="ChaoticComponents\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="ChaoticComponents\ChaoticComponents.csproj" />
+  </ItemGroup>
+
+</Project>
